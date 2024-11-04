@@ -1,14 +1,18 @@
-﻿internal class Program
+﻿using System.Collections.Generic;
+internal class Program
 {
     private static void Main(string[] args)
     {
-       
+      
+            
+
 
 
 
 
         Console.ReadKey();
     }
+   
 }
 #region Range sum query immutable
 //int[] arr = { -2, 0, 3, -5, 2, -1 };
@@ -76,10 +80,10 @@
 //{
 //    public bool IsPalindrome(int x) //121 //123
 //    {
-      
+
 //      var y= x.ToString().ToCharArray();
 //       var z= x.ToString().ToCharArray().Reverse();
-       
+
 //        if(y.SequenceEqual(z)) return true;   
 
 //        return false;
@@ -87,3 +91,42 @@
 //}
 #endregion
 
+#region roman-to-integer
+//Solution solution = new Solution();
+//Console.WriteLine(solution.RomanToInt("MCMXCIV"));
+
+//public class Solution
+//{
+//    private Dictionary<char, int> roman = new Dictionary<char, int>
+//    {
+//        { 'I', 1 },
+//        { 'V', 5 },                  
+//        { 'X', 10 },
+//        { 'L', 50 },
+//        { 'C', 100 },
+//        { 'D', 500 },
+//        { 'M', 1000 }
+//    };
+
+//    public int RomanToInt(string s)  //MCMXCIV  //M900
+//    {
+//        int sum = 0;
+
+//        for (int i= 0;i < s.Length;i++)
+//        {
+//            if (i < s.Length - 1 && roman[s[i]] < roman[s[i + 1]])
+//            {
+
+//                sum -= roman[s[i]];
+//            }
+//            else
+//            {
+
+//                sum += roman[s[i]];
+//            }
+
+//        }
+//        return sum;
+//    }
+//}
+#endregion
